@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 li, a{
     display: inline-block;
-    font-family: sans-serif;
+    font-family: Arial Black, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
@@ -45,10 +45,10 @@ header{
     transition: all 0.3s ease 0s;
 }
 .nav__links li a:hover{
-    border-bottom: 2px solid rgba(42, 32, 32, 0.685);
+    border-bottom: 2px solid hsl(273, 4%, 51%);
     padding-bottom: 5px;
 }
-button{
+.cta{
     margin-left: 25px;
     padding: 9px 20px;
     border:2px solid;
@@ -56,9 +56,70 @@ button{
     transition: all 0.3s ease 0s;
 }
 button:hover {
-    background-color: rgb(15, 148, 209);
+    background-color:hsl(270, 9%, 17%);
+    color: #fff;
+}
+.btn{
+    margin: 20px 0 0 50px;
+    padding: 9px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border:none;
+    color: hsl(270, 9%, 17%);
+    background-color:#fff;
+}
+.btn:hover {
+    background-color:hsl(270, 9%, 17%);
+    color: #fff;
+    border-bottom: 2px solid hsl(273, 4%, 51%);
 }
 
 
+#hero{
+    position: relative;
+    background-color: hsl(270, 9%, 17%);
+    min-height: 600px;
+    box-sizing: border-box;
+}
+.text{
+    padding:80px 0 20px 0;
+}
+#hero h1{
+    border-top: 1px solid #fff ;
+    width: 50%;
+    font-family: DM Serif Display;
+    font-size: 70px;
+    padding:100px 0 0 50px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+}
 
+#hero p{
+    width: 50%;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    padding: 0 10px 10px 50px;
 
+}
+
+.img1{
+    position: absolute;
+    top: 80px;
+    right: 130px;
+    box-sizing: border-box;
+
+}
+.img2{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: -50%;
+
+}.img3{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width: -50%;
+}
