@@ -2,18 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: #fff; */
+    font-family: Karla;
 }
 
-li, a{
+.nav__links li a{
     display: inline-block;
     font-family: Arial Black, sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 15px;
     color: rgba(114, 118, 133, 0.705);
     text-decoration: none;
     word-spacing: 2px;
+    
 }
 button{
     display: inline-block;
@@ -21,10 +22,17 @@ button{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 15px;
-    color:  rgba(42, 32, 32, 0.685);
+    color:  hsl(256, 26%, 20%); 
     text-decoration: none;
 } 
+
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -56,70 +64,221 @@ header{
     transition: all 0.3s ease 0s;
 }
 button:hover {
-    background-color:hsl(270, 9%, 17%);
+    background-color:hsl(256, 26%, 20%);
     color: #fff;
 }
 .btn{
-    margin: 20px 0 0 50px;
+    margin-top: 20px;
     padding: 9px 20px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
     border:none;
     color: hsl(270, 9%, 17%);
     background-color:#fff;
 }
 .btn:hover {
-    background-color:hsl(270, 9%, 17%);
+    background-color:hsl(256, 26%, 20%);
     color: #fff;
     border-bottom: 2px solid hsl(273, 4%, 51%);
 }
 
-
 #hero{
     position: relative;
-    background-color: hsl(270, 9%, 17%);
+    background-color: hsl(256, 26%, 20%);
     min-height: 600px;
     box-sizing: border-box;
+    margin-top: 100px;
+    z-index: 8;
 }
-.text{
-    padding:80px 0 20px 0;
+#first{
+    margin-bottom: 20px;
+    padding: 130px 10px 0 130px;
 }
+
+.line{
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: #fff; 
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 #hero h1{
-    border-top: 1px solid #fff ;
     width: 50%;
+    margin-top: 0px;
     font-family: DM Serif Display;
     font-size: 70px;
-    padding:100px 0 0 50px;
     font-weight: 700;
     text-align: left;
     color: #fff;
 }
 
 #hero p{
+    padding: 20px 100px 0 0;
     width: 50%;
     color: #fff;
     font-size: 16px;
     text-align: left;
-    padding: 0 10px 10px 50px;
-
+    font-weight: 400;
+    word-spacing: 2px;
+    
 }
 
 .img1{
     position: absolute;
-    top: 80px;
-    right: 130px;
+    top: 110px;
+    right: 150px;
     box-sizing: border-box;
-
 }
+
 .img2{
     position: absolute;
-    top: 0px;
-    right:0px;
-    width: -50%;
-
-}.img3{
-    position: absolute;
-    bottom:0px;
-    left:0px;
-    width: -50%;
+    top: -80px;
+    right:-10px;
+    z-index: 9;
 }
+
+.img3{
+    position: absolute;
+    bottom:-55%;
+    left:0px;
+}
+
+.heading2 h1{
+    width: 50%;
+    font-family: DM Serif Display;
+    font-size: 70px;
+    margin-top: 25%;
+    padding:0 0 0 130px;
+    font-weight: 700;
+    text-align: left;
+    color: #333;
+    z-index: 7;
+}
+
+.line2{
+    margin-top: -1px;
+    margin-bottom: 30px;
+    background-color: hsl(216, 30%, 68%);
+    display: block;
+    height: 1px;
+    width: 120px;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding:0 100px 0 100px;
+    align-items: center;
+   
+}
+.flexbox-item{
+    width: 350px;
+    margin: 50px;
+    min-height: 300px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.fbh1{
+    font-family: DM Serif Display;
+    padding-top: 30px;
+    color: hsl(270, 9%, 17%);
+}
+.flexbox-item p{
+    padding-top: 20px;
+}
+
+.section3{
+    position: relative;
+    box-sizing: border-box;
+    min-height: 200px;
+    margin: 100px 130px 100px 130px;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.section3 h1{
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    /* padding: 50px 10px 0 100px; */
+}
+
+.btn3{
+    display: inline;
+    padding: 9px 20px;
+    cursor: pointer;
+    border:none;
+    color: hsl(270, 9%, 17%);
+    background-color:#fff;
+}
+.btn3:hover {
+    background-color:hsl(256, 26%, 20%);
+    color: #fff;
+    border-bottom: 2px solid hsl(273, 4%, 51%);
+}
+
+footer{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    background-image: url('images/bg-pattern-footer-desktop.svg'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
+}
+.foot1{
+    display: flex;
+    align-items: center;
+    padding: 20px 9%;
+    margin-top: 30px;
+}
+.logo2{
+    cursor: pointer;
+    margin-right: auto;
+    justify-self: start;
+}
+.foot__links img{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 10px;
+    justify-content: flex-end;
+}
+
+.line3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: hsl(216, 30%, 68%);
+    display: block;
+    height: 1px;
+    justify-self: space-between;
+    width: 100%;
+}
+.foot2{
+    display: flex;
+    padding: 20px 9%;
+    align-items: center;
+    justify-content: space-between;
+}
+.foot2 li{
+    padding: 10px;
+    list-style: none;
+    text-transform: uppercase;
+}
+.foot2 h3{
+    padding: 10px 7%;
+    list-style: none;
+    text-transform: uppercase;
+    color: hsl(273, 4%, 51%);
+}
+.company{
+justify-self: start;
+}
+
+
