@@ -91,7 +91,7 @@ button:hover {
 }
 #first{
     margin-bottom: 20px;
-    padding: 130px 10px 0 130px;
+    padding: 110px 10px 0 130px;
 }
 
 .line{
@@ -105,7 +105,7 @@ button:hover {
 
 #hero h1{
     width: 50%;
-    margin-top: 0px;
+    margin-top: 50px;
     font-family: DM Serif Display;
     font-size: 70px;
     font-weight: 700;
