@@ -182,11 +182,17 @@ button:hover {
 }
 .fbh1{
     font-family: DM Serif Display;
+    font-size: 30px;
     padding-top: 30px;
     color: hsl(270, 9%, 17%);
 }
 .flexbox-item p{
-    padding-top: 20px;
+    padding-top: 20px; 
+    font-size: 14px;
+    list-style: none;
+    font-family: Arial Black, sans-serif;
+    color: hsl(216, 30%, 68%);
+
 }
 
 .section3{
@@ -228,6 +234,7 @@ button:hover {
 footer{
     width: 100%;
     background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
     background-image: url('images/bg-pattern-footer-desktop.svg'); 
     background-repeat: no-repeat;
     background-position: top left;
@@ -245,40 +252,50 @@ footer{
     justify-self: start;
 }
 .foot__links img{
-    cursor: pointer;
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0px 5px;
     justify-content: flex-end;
+}
+.foot__links img:hover{
+    cursor: pointer;
+    color: hsl(270, 9%, 17%);
 }
 
 .line3{
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: hsl(216, 30%, 68%);
-    display: block;
     height: 1px;
-    justify-self: space-between;
-    width: 100%;
+    display: flex;
+    margin: 15px 9%;
+    
 }
 .foot2{
     display: flex;
     padding: 20px 9%;
-    align-items: center;
+    margin-bottom: 100px;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .foot2 li{
     padding: 10px;
+    font-size: 14px;
     list-style: none;
     text-transform: uppercase;
+    font-family: Arial Black, sans-serif;
+    color: hsl(256, 26%, 20%);
+    
 }
-.foot2 h3{
-    padding: 10px 7%;
+.foot2 h4{
+    padding: 30px 7%;
+    font-size: 14px;
     list-style: none;
     text-transform: uppercase;
-    color: hsl(273, 4%, 51%);
+    font-family: Arial Black, sans-serif;
+    color: rgba(114, 118, 133, 0.705);
 }
-.company{
-justify-self: start;
+.last{
+    margin-right: 150px;
 }
 
 
