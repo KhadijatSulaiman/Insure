@@ -1,123 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fonts/DMSerifDisplay-Regular.ttf">
-    <link rel="stylesheet" type="text/css" href="fonts/Karla-Regular.ttf">
-</head>
-<body>
-    <header>
-        <div class="custom-menu visible-xs">
-            <span class="close-sign">
-                <i class="glyphicon glyphicon-menu-hamburger"></i>
-            </span>
-            <span class="open-sign">
-                <i class="glyphicon glyphicon-menu-remover"></i>
-            </span>
-        </div>
-        <img class="logo" src="images/logo.svg" alt="logo"/>
-        <nav class="nav">
-            <ul class="nav__links">
-            <li><a href="#">How we work</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Account</a></li>
-            </ul>
-        </nav>
-        <a href=""><button class="cta">View Plans</button></a>
-    </header>
-    <section id="hero"> 
-        <div class="container herocon">
-            <div id="first">
-                <div class="line"><html></html></div>
-                <h1>Humanizing <br>Your Insurance.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo sed eum corporis, blanditiis veniam maiores. Neque quas enim quo repellat beatae rem eos? Odio sequi repudiandae, velit autem ratione officia</p>
-                <a href=""><button class="btn">View Plans</button></a>
-            </div>
-            <div>
-                <img class="img1" src="images/image-intro-desktop.jpg" alt="image">
-                <img class="img2" src="images/bg-pattern-intro-right-desktop.svg" alt="image">
-                <img class="img3" src="images/bg-pattern-intro-left-desktop.svg" alt="image">
-            </div>
-        </div>
-    </section>
-    <section class="container"> 
-        <div class="container heading2">
-            <h1>
-                <div class="line2"><html></html></div>
-                We're Different
-            </h1>
-        </div>
-        <div class="grid-container">
-            <div class="grid-item item1">
-                <img src="images/icon-snappy-process.svg" alt="icon1">
-                <h1 class="fbh1">Snappy Process</h1>
-                <p>Our application process can be completed in minutes not hours. Don't get stuck filling tedious forms</p>
-            </div>
-            <div class="grid-item item2">
-                <img src="images/icon-affordable-prices.svg" alt="icon2">
-                <h1 class="fbh1">Affordable Prices</h1>
-                <p>We don't want you worrying about high monthly costs. Our prices may be low but we offer the best coverage possible</p>
-            </div>
-            <div class="grid-item item3">
-                <img src="images/icon-people-first.svg" alt="icon3">
-                <h1 class="fbh1">People First</h1>
-                <p>Our plans aren't full of conditions and clauses to prevent payouts. We make sure you are covered when you need it </p>
-            </div>
-        </div> 
-        <div class="container section3">
-            <h1>Find out more <br> about how we work</h1>
-            <button class="btn3">HOW WE WORK</button></div>
-            
-        </div>
-    </section>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
 
-    <footer class="container">
-        <div class="foot1">
-            <img class="logo2" src="images/logo.svg" alt="logo"/>
-            <ul class="foot__links">
-                <img src="images/icon-facebook.svg" alt="logo"/>
-                <img src="images/icon-twitter.svg" alt="logo"/>
-                <img src="images/icon-pinterest.svg" alt="logo"/>
-                <img src="images/icon-instagram.svg" alt="logo"/>
-            </ul>
-        </div>
+.nav__links li a{
+    display: inline-block;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(114, 118, 133, 0.705);
+    text-decoration: none;
+    word-spacing: 2px;
+    
+}
+button{
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color:  hsl(256, 26%, 20%); 
+    text-decoration: none;
+} 
 
-        <div class="line3"><html></html></div>
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 7%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    border-bottom: 2px solid hsl(273, 4%, 51%);
+    padding-bottom: 5px;
+}
+.cta{
+    margin-left: 25px;
+    padding: 9px 20px;
+    border:2px solid;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color:hsl(256, 26%, 20%);
+    color: #fff;
+}
+.btn{
+    margin-top: 20px;
+    padding: 9px 20px;
+    cursor: pointer;
+    border:none;
+    color: hsl(270, 9%, 17%);
+    background-color:#fff;
+}
+.btn:hover {
+    background-color:hsl(256, 26%, 20%);
+    color: #fff;
+    border-bottom: 2px solid hsl(273, 4%, 51%);
+}
 
-        <div class="foot2">
-            <div>
-                <h4>Our company</h4>
-                <ul>
-                    <li>How we work</li>
-                    <li>Why insure?</li>
-                    <li>view plans</li>
-                    <li>reviews</li>
-                </ul>
-            </div>
-            <div>
-                <h4>help me</h4>
-                <li>faq</li>
-                <li>terms of use</li>
-                <li>privacy policy</li>
-                <li>Cookies</li>
-            </div>
-            <div>
-                <h4>contact</h4>
-                <li>sales</li>
-                <li>support</li>
-                <li>live chat</li>
-            </div>
-            <div class="last">
-                <h4>others</h4>
-                <li>careers</li>
-                <li>press</li>
-                <li>licenses</li>
-            </div>
-        </div>
-    </footer>
+#hero{
+    position: relative;
+    background-color: hsl(256, 26%, 20%);
+    min-height: 600px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    z-index: 8;
+}
+#first{
+    margin-bottom: 20px;
+    padding: 110px 10px 0 130px;
+}
 
-</body>
-</html>
+.line{
+    display: block;
+    height: 1px;
+    width: 120px;
+    background-color: #fff; 
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#hero h1{
+    width: 50%;
+    margin-top: 50px;
+    font-family: DM Serif Display;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: left;
+    color: #fff;
+}
+
+#hero p{
+    padding: 20px 100px 0 0;
+    width: 50%;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 25px;
+    
+}
+
+.img1{
+    position: absolute;
+    top: 110px;
+    right: 150px;
+    box-sizing: border-box;
+}
+
+.img2{
+    position: absolute;
+    top: -80px;
+    right:-10px;
+    z-index: 9;
+}
+
+.img3{
+    position: absolute;
+    bottom:-55%;
+    left:0px;
+}
+
+.heading2 h1{
+    width: 50%;
+    font-family: DM Serif Display;
+    font-size: 70px;
+    margin-top: 25%;
+    padding:0 0 0 130px;
+    font-weight: 700;
+    text-align: left;
+    color: #333;
+    z-index: 7;
+}
+
+.line2{
+    margin-top: -1px;
+    margin-bottom: 30px;
+    background-color: hsl(216, 30%, 68%);
+    display: block;
+    height: 1px;
+    width: 120px;
+}
+ 
+
+.grid-container{
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 40px 9%;
+    
+}
+.grid-container > div {
+    text-align: left;
+    padding: 30px 0;
+    font-size: 16px;
+    width: 350px;
+    min-height: 350px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.fbh1{
+    font-family: DM Serif Display;
+    font-size: 30px;
+    padding-top: 40px;
+    color: hsl(270, 9%, 17%);
+}
+.grid-item p{
+    padding-top: 30px; 
+    font-size: 16px;
+    list-style: none;
+    font-family: 'Karla', sans-serif;
+    color: rgba(114, 118, 133, 0.705);
+
+}
+
+.section3{
+    position: relative;
+    box-sizing: border-box;
+    min-height: 200px;
+    margin: 100px 130px 100px 130px;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.section3 h1{
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    /* padding: 50px 10px 0 100px; */
+}
+
+.btn3{
+    display: inline;
+    padding: 9px 20px;
+    cursor: pointer;
+    border:none;
+    color: hsl(270, 9%, 17%);
+    background-color:#fff;
+}
+.btn3:hover {
+    background-color:hsl(256, 26%, 20%);
+    color: #fff;
+    border-bottom: 2px solid hsl(273, 4%, 51%);
+}
+
+footer{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    box-sizing: border-box;
+    background-image: url('images/bg-pattern-footer-desktop.svg'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
+}
+.foot1{
+    display: flex;
+    align-items: center;
+    padding: 20px 9%;
+    margin-top: 30px;
+}
+.logo2{
+    cursor: pointer;
+    margin-right: auto;
+    justify-self: start;
+}
+.foot__links img{
+    display: inline-block;
+    padding: 0px 5px;
+    justify-content: flex-end;
+}
+.foot__links img:hover{
+    cursor: pointer;
+    color: hsl(270, 9%, 17%);
+}
+
+.line3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: hsl(216, 30%, 68%);
+    height: 1px;
+    display: flex;
+    margin: 15px 9%;
+    
+}
+.foot2{
+    display: flex;
+    padding: 20px 9%;
+    margin-bottom: 100px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.foot2 li{
+    padding: 10px;
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Arial Black, sans-serif;
+    color: hsl(256, 26%, 20%);
+    
+}
+.foot2 h4{
+    padding: 30px 7%;
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    color: rgba(114, 118, 133, 0.705);
+}
+.last{
+    margin-right: 150px;
+}
+
+
+/*Media Queries*/
+
+@media(max-width:375px){
+    header button, 
+    .logo, 
+    nav, 
+    .nav__links li, 
+    .cta{
+        text-align: center;
+        width: 100%;
+        float: none; 
+        margin: 0;
+
+        
+    }
+    header{  
+         
+        /* display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 300px; */
+        width: 100%;
+        background-color:hsl(256, 26%, 20%); ;
+    }
+    ul{
+        float: none;
+    }
+    ul li{
+        float: none;
+        margin-left: 0;
+    }
+    ul li a{
+        padding: 10px 0;
+        text-align: center;
+    }
+    ul li:hover a{
+        border: 2px solid #fff;
+    }
+    .custom-menu{
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        left: 35px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+    .custom-menu span{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .custom-menu i{
+        font-size: 30px;
+        color: #fff;
+    }
+    .open-sign{
+        display: none;
+    }
+}
